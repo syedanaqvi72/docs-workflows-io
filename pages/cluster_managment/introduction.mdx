@@ -1,0 +1,56 @@
+### Cluster Management
+
+<b>GRiPO</b> provides the opportunity to create a new Kubernetes cluster or import
+an existing one. To navigate, click on the following
+
+* [Create Kubernetes Cluster](introduction#create-kubernetes-cluster)
+* [Import Cluster](introduction#import-existing-kubernetes-cluster)
+* [Templates](introduction#templates)
+
+#### Create Kubernetes Cluster
+
+<b>Creating a Kubernetes cluster involves:</b>
+
+Select a cloud provider or infrastructure platform where you want to create your Kubernetes cluster. Common choices include AWS (Amazon Web Services), GCP (Google Cloud Platform), Azure, DigitalOcean, or on-premises infrastructure.
+
+![select_cluster](/cluster_provisioning/image1.png)
+
+<b>To initiate the creation of a cluster , proceed by following the comprehensive documentation provided for each provider:</b>
+
+- [EKS](/cluster_managment/cluster_provisioning/amazon)
+- [GKE](/cluster_managment/cluster_provisioning/google)
+- [AKS](/cluster_managment/cluster_provisioning/azure)
+- [DigitalOcean](/cluster_managment/cluster_provisioning/digital_ocean)
+- [LKE](/cluster_managment/cluster_provisioning/linode)
+
+<b>Verification:</b>
+
+Check cluster status, node health, and networking.
+Managed services simplify this process, abstracting infrastructure setup. Platforms like Amazon EKS or Google GKE allow users to define cluster specs and start the creation process via a user-friendly interface or CLI.
+
+![home](/cluster_provisioning/create-cluster-home.png)
+
+#### Import existing Kubernetes Cluster
+
+Gripo also provides the facility to import an existing kubernetes cluster from different cloud providers into the Gripo Portal. Follow the articles to import your existing kubernetes cluster from different cloud provider to Gripo.
+
+| Cloud Provider                                 | Import                                                                         |
+| ---------------------------------------------- | ------------------------------------------------------------------------------ |
+| AWS EKS                                        | [EKS Cluster](/cluster_managment/cluster_import/amazon)                  |
+| Google Kubernetes Engine (GKE)                 | [GKE Cluster](/cluster_managment/cluster_import/google)                  |
+| Azure Kubernetes Service (AKS)                 | [AKS Cluster](/cluster_managment/cluster_import/azure).                  |
+| DigitalOcean Kubernetes Service (DigitalOcean) | [DigitalOcean Cluster](/cluster_managment/cluster_import/digital-ocean). |
+| Linode Kubernetes Service (LKE)                | [Linode Cluster](/cluster_managment/cluster_import/linode). |             
+#### Templates
+
+Gripo offers the ability to create Kubernetes clusters using templates, enabling users to streamline cluster provisioning with pre-defined, customizable configurations, ensuring consistency and efficiency across deployments.
+
+
+| Cloud Provider                                 | Templates                                                                  |
+| ---------------------------------------------- | ------------------------------------------------------------------------------ |
+| AWS EKS                                        | [EKS Template](/cluster_managment/cluster_provisioning/amazon)                  |
+| Google Kubernetes Engine (GKE)                 | [GKE Template](/cluster_managment/cluster_provisioning/google)                  |
+| Azure Kubernetes Service (AKS)                 | [AKS Template](/cluster_managment/cluster_provisioning/azure).                  |
+| DigitalOcean Kubernetes Service (DigitalOcean) | [DigitalOcean Template](/cluster_managment/cluster_provisioning/digital_ocean). |
+| Linode Kubernetes Service (LKE)                | [Linode Template](/cluster_managment/cluster_provisioning/linode). |            
+

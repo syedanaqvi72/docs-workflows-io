@@ -1,0 +1,36 @@
+#### Creating a Node Role
+
+- Access the starting point for creating AWS node roles:<b> https://aws.amazon.com/.</b>
+
+![amazon-role](/pre-requsite/amazon/role/role0.png)
+
+- For swift role management in AWS, utilize the search bar for <b>"IAM" </b> access, then within the dashboard, click <b> "Roles"</b> in the left sidebar. Inside the "Roles" section, click <b>"Create role" </b> to begin defining your new role's permissions and configurations.
+
+![amazon-role](/pre-requsite/amazon/worker_role/worker2.png)
+
+- Launching your EC2 role starts with picking its "boss": click <b> "AWS services" </b>in the trust selection. Then, define its job by choosing <b>"EC2" </b> as the use case, unlocking tailored permissions and policies for managing your instances seamlessly.
+
+![amazon-role](/pre-requsite/amazon/worker_role/worker3.png)
+
+- Fueling your EKS role comes down to attaching the right permissions. Scan policies like "AmazonEKSClusterPolicy" or "AmazonEKSServicePolicy," choosing the ones that grant the precise access you need for managing the cluster or unlocking specific EKS services. Remember, these policies define what actions your role can perform, so pick wisely for a secure and well-defined access structure.
+
+![amazon-role](/pre-requsite/amazon/worker_role/worker4.png)
+
+- Unleash your EC2 role's true power by attaching the perfect permissions. Scan through policies like <b> "AmazonEC2FullAccess" or "AmazonEC2ReadOnlyAccess,"</b> choosing those that grant the precise control you need for managing instances or unlocking specific EC2 features. Remember, these policies define your role's actions, so pick wisely for a secure and streamlined access setup.
+
+![amazon-role](/pre-requsite/amazon/worker_role/worker5.png)
+
+- <b>Review </b>the role details, focusing on the trusted entity, use case
+  (EC2), and assigned policies (EKS and EC2). Confirm precise alignment with
+  intended functions. If needed, click 'Next: Tags'; otherwise, proceed by
+  clicking <b>'Create Role'.</b>
+
+![amazon-role](/pre-requsite/amazon/worker_role/worker6.png)
+
+- Upon creating the worker node role, a confirmation popup will appear. Verify its existence in the role list, easily identifiable by the designated name during creation.
+
+![amazon-role](/pre-requsite/amazon/worker_role/worker7.png)
+
+## Next Step
+
+After creating Node Worker role, you are one step forward in cluster provisioning . Click on link for futher proceed [Cluster Creation ](/cluster_managment/cluster_provisioning/amazon).

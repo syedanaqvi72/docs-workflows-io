@@ -1,0 +1,8 @@
+.caution {
+    background-color: #fff3cd; /* light yellow for the background */
+    border-left: 4px solid #ffc107; /* darker yellow for the border */
+    color: #856404; /* brownish color for the text */
+    padding: 16px;
+    margin: 16px 0;
+    border-radius: 4px;
+}

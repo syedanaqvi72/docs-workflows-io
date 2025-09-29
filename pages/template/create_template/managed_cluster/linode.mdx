@@ -1,0 +1,77 @@
+##### Create Linode Template
+
+- To create a new Linode template, click on the "Create New Template" button in the Templates section .
+
+  <br />
+  ![template](/template/tem/tem2.jpg)
+  <br />
+
+- When you click on "Create New Template" for Linode, a form will appear. Fill in the required fields, including the <b>name, version, and description</b> of your template. In the <b>"Provider"</b> field, choose "Linode."
+
+  <br />
+  ![template](/template/createtemplate/createtem1.png)
+  <br />
+
+- In the <b>"Template Type"</b> field, select "Managed Cluster,"
+  {" "}
+  <br />
+  ![template](/template/createtemplate/createtem2.png)
+  <br />
+- After completing the form, click on "Create Template" to save it.
+  {" "}
+  <br />
+  ![template](/template/createtemplate/lintem1.png)
+  <br />
+##### In the template creation process, follow these three steps:
+* <b>Choose Your Repository:</b> Select your repository from the list. A double tick
+  will appear next to your selected repository. 
+  * Click "Next Step."
+  <br />
+  ![template](/template/createtemplate/createtem4.png)
+  <br />
+  * <b>Select the Package:</b> Choose the package from the list. A double tick
+  will appear next to your selected package. 
+  * Click "Next Step."
+  <br />
+  ![template](/template/createtemplate/lintem2.png)
+  <br />
+  <b>Configure Package:</b>
+
+A form will appear with the following fields:
+
+- Name: Enter a name for your template.
+- Package Version: Select the version of the package.
+- Provider: Linode.
+- Secret: Input any necessary secrets for the template.
+- Region: Select the Linode region for deployment.
+- Kubernetes Version: Choose the Kubernetes version for your cluster.
+- Node Count: Select the nodes.
+- Instance Type: Select the instance type for deployment.
+* After filling out the necessary fields, click on Generate Package button on the editor <br />
+<br />
+![template](/template/createtemplate/lintem3.png)
+<br />
+* Click on Generate Manifest to complete
+the template creation.
+<br />
+![template](/template/createtemplate/lintem5.png)
+<br />
+* Click on <b>Add Cluster</b>
+<br />
+  ![template](/template/createtemplate/azureadd.png)
+  <br />
+* A confirmation pop-up window of the addition of a manifest and package appears.
+<br />
+  ![template](/template/createtemplate/azureadd1.png)
+  <br />
+  * Click on <b>Finish </b>
+  <br />
+  ![template](/template/createtemplate/createtem6.png)
+  <br />
+  * Once the template is created, a window appears displaying a tree view for the Linode Managed-Cluster template.
+   <br />
+ ![template](/template/createtemplate/lintem6.png)
+  <br />
+
+#### Linode Cluster Provisioning:
+This template facilitates efficient [Linode cluster creation](/cluster_managment/cluster_provisioning/linode/linode_tem) to suit your requirements

@@ -1,0 +1,44 @@
+#### Overveiw:
+
+Gripo revolutionizes Kubernetes management by integrating K8sGPT, an AI-driven diagnostic tool that proactively identifies and resolves cluster issues with precision. Through Gripo’s multi-cloud platform, users gain unparalleled visibility and automated insights, transforming complex troubleshooting into a seamless experience.
+
+The K8sGPT Operator within Gripo enables continuous monitoring, allowing users to define custom resources, automate issue detection, and integrate effortlessly with observability tools like Prometheus and Alertmanager. This intelligent synergy positions Gripo as the premier choice for streamlined, AI-powered Kubernetes operations across diverse cloud environments
+
+#### Accessing k8sgpt in Gripo
+* In order for customers to fully utilise k8sgpt in Gripo, you need to have an operational Kubernetes cluster.
+* You have OpenAI access with a valid API key 
+<br />
+![k8sgpt](/cluster_operation/k8sgpt/k8sgpt1.jpeg)<br />
+
+* Navigate to All Clusters under the Cluster section, then click on the terminal icon of the cluster where you want to access k8sgpt.
+<br />
+![k8sgpt](/cluster_operation/k8sgpt/k8sgpt1b.jpeg)<br />
+*  Select <b>kubectl</b> to proceed.
+<br />
+![k8sgpt](/cluster_operation/k8sgpt/k8sgpt2.jpeg)<br />
+* To confirm that k8sgpt is available and functioning, type <b>"k8sgpt"</b> in the terminal and press Enter
+<br />
+![k8sgpt](/cluster_operation/k8sgpt/k8sgpt3.jpeg)<br />
+* To authenticate k8sgpt with the required credentials or API keys, use the command<b> k8sgpt auth add.</b>
+<br />
+
+* Provide your OpenAI API key. If you don’t have one, you can generate it at https://platform.openai.com/docs/overview<br />
+
+<b> Steps for creating OpenAI key : </b>
+* Sign in with your OpenAI account.
+* Navigate to API Keys:
+* Click on your profile icon .
+* Select "View API Keys" or go to Settings > API Keys.
+* Click on <b> create new  secret key</b> button .
+<br />
+![k8sgpt](/cluster_operation/k8sgpt/k8sgpt5.png)<br />
+* A form will appear. Enter your <b>service account ID</b>, select your <b>project</b>, and click the <b>"Create Secret Key" </b>button to generate your OpenAI API key
+<br />
+![k8sgpt](/cluster_operation/k8sgpt/k8sgpt6.png)<br />
+* After providing your OpenAI API key, you gain access to k8sgpt. To scan your cluster for issues, type k8sgpt analyze and press Enter.
+<br />
+![k8sgpt](/cluster_operation/k8sgpt/k8sgpt7.png)<br />
+* To conduct a comprehensive analysis of your Kubernetes cluster with AI-driven insights, use<b> k8sgpt analyze --explain. </b>This command not only detects issues but also provides detailed explanations, offering context, root cause analysis, and recommended solutions for effective troubleshooting.
+<br />
+![k8sgpt](/cluster_operation/k8sgpt/k8sgpt8.png)<br />
+

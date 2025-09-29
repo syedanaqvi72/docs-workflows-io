@@ -1,0 +1,68 @@
+#### Creating a new Role
+
+<b> Accessing the Foundation: Official AWS Website Navigation</b>* Initiating the
+role creation process within the complex AWS ecosystem begins with the crucial first
+step of navigating to the revered and authoritative official website ie: https://aws.amazon.com/
+provided by AWS.
+
+![amazon-role](/pre-requsite/amazon/role/role0.png)
+
+<br />
+<b> Navigate the IAM dashboard </b>* After logging in, access the IAM section in
+the left side of the AWS Management Console to manage roles, users, and
+permissions.
+
+![amazon-role](/pre-requsite/amazon/role/role1.jpg)
+
+- For a time-saving approach, employ the search bar to access <b>IAM </b>directly, enabling seamless management of roles, users, and access policies.
+
+![amazon-role](/pre-requsite/amazon/role/role2.png)
+
+- In the<b> "Roles" </b>section, click <b>"Create role"</b> to initiate the establishment of a new role in your AWS environment. Define permissions, access policies, and configurations to align with your specific needs and security practices.
+
+![amazon-role](/pre-requsite/amazon/role/role3b.png)
+
+<br />
+<b> Trusted entity & Use </b>* After clicking "Create role," choose the trusted
+entity—usually <b>"AWS service"</b>, especially for services like EC2.
+
+- After selecting the trusted entity, the next step involves defining the <b>use case</b> for this role.
+- Choose the <b>"EC2"</b> use case or service from the provided options.
+
+![amazon-role](/pre-requsite/amazon/role/role4a.png)
+
+- Grant permissions or policies for Amazon EKS clusters by selecting <b>"EKS" </b>(Amazon Elastic Kubernetes Service) from the list of available services or<b> use cases</b>. By choosing "EKS," you're specifying permissions and policies that govern access and actions within your Amazon EKS clusters.
+
+![amazon-role](/pre-requsite/amazon/role/role4b.jpg)
+
+- Select the <b>checkbox</b> next to the policies that align with the permissions required for the role.
+- Click on the <b>"Next" </b> button once you've selected the desired policies.
+
+![amazon-role](/pre-requsite/amazon/role/role5.jpg)
+
+- Review role configuration details, including trusted entity, use case (EC2 or EKS), and attached policies.
+- Ensure permissions align with the role's intended purpose.
+  Click <b>"Create role"</b>, proceed directly to the next steps for role creation.
+
+![amazon-role](/pre-requsite/amazon/role/role6.jpg)
+
+#### Verification of created role
+
+- Check the <b>"Roles"</b> section for a list of configured roles in your AWS account.
+  Verify the presence of your newly created role by examining the list; it should display the assigned name.
+
+![amazon-role](/pre-requsite/amazon/role/role7.jpg)
+
+#### Deleting a Role in AWS IAM
+
+- In the <b>"Roles"</b> section, find the role to delete, click its name for detailed information.
+- Meticulously review attached policies to confirm the correct role.
+- If confident, click "Delete role" to initiate the deletion, with AWS prompting confirmation.
+- To proceed with deletion, type the <b>exact name</b> of the role into the confirmation box and click on the <b>"Delete role"</b> button once more.
+- AWS will then initiate the deletion process. Upon successful completion, the role will be permanently removed from the list of roles within the IAM dashboard.
+
+![amazon-role](/pre-requsite/amazon/role/role8.jpg)
+
+## Next Step
+
+After creating IAM role, you are one step forward in cluster provisioning . Click on link for futher proceed [Cluster Creation ](/cluster_managment/cluster_provisioning/amazon).
