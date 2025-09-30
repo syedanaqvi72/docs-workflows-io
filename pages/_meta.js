@@ -1,11 +1,7 @@
 export default {
   "index": "Introduction",
-  "getting-started": "Getting Started",
-  "install-gripo": "Install Gripo",
   "cluster_managment": "Cluster Management",
-   "template":"Templates",
   "secret": "Secret",
-  "helm-app":"Helm Applications",
   "cloud_services": "Cloud Services",
   "cluster_operations": "Cluster Operations",
   "gripo": {
