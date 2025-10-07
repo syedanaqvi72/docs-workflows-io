@@ -1,6 +1,10 @@
 export default {
   index: "Introduction",
-
+ "getting-started": "Getting Started",
+  "workflow": "Workflow",
+  "connection": "Connection",
+   "plugin":"PlugIn",
+  "aiagent": "AI Agent",
   contact: {
     title: "Contact ↗",
     type: "page",
